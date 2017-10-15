@@ -30,7 +30,7 @@
                     </v-card-text>
                     <v-card-actions>
                         <v-spacer></v-spacer>
-                        <app-item-register-dialog :itemId="item.id"></app-item-register-dialog>
+                        <app-item-register-dialog :itemId="item.id" v-if="userIsAuthenticated && !userIsCreator"></app-item-register-dialog>
                     </v-card-actions>
               </v-card>
           </v-flex>
